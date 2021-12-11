@@ -2602,6 +2602,7 @@ footer {
   height: 200px;
   border-radius: 50%;
   background: #289c28;
+  z-index: -2;
   top: 0;
   left: 0;
   -webkit-transform: translate(10px, -10px);
@@ -2651,6 +2652,7 @@ footer {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  background: #fff;
 }
 
 .item-steps__image::before {
@@ -2701,9 +2703,8 @@ footer {
 }
 
 .use__three {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4B95D4), to(#77ABD3));
-  background: -o-linear-gradient(#4B95D4, #77ABD3);
-  background: linear-gradient(#4B95D4, #77ABD3);
+  background: -o-linear-gradient(45deg, #4B95D4 40%, #77ABD3 60%);
+  background: linear-gradient(45deg, #4B95D4 40%, #77ABD3 60%);
   position: relative;
   padding: 50px 0px;
 }
@@ -2745,13 +2746,9 @@ footer {
 .use__night {
   padding: 50px 0px;
   position: relative;
-  background: #0b1d26;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#0b1d26), color-stop(3%, #171f33), color-stop(7%, #171f33), color-stop(11%, #171f33), color-stop(26%, #102860), color-stop(26%, #102860), color-stop(44%, #171f33), color-stop(44%, #171f33), color-stop(52%, #171f33), color-stop(62%, #102860), to(#171f33));
-  background: -o-linear-gradient(top, #0b1d26 0%, #171f33 3%, #171f33 7%, #171f33 11%, #102860 26%, #102860 26%, #171f33 44%, #171f33 44%, #171f33 52%, #102860 62%, #171f33 100%);
-  background: linear-gradient(to bottom, #0b1d26 0%, #171f33 3%, #171f33 7%, #171f33 11%, #102860 26%, #102860 26%, #171f33 44%, #171f33 44%, #171f33 52%, #102860 62%, #171f33 100%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(30%, #01032A), color-stop(80%, #282E87));
+  background: -o-linear-gradient(right, #01032A 30%, #282E87 80%);
+  background: linear-gradient(-90deg, #01032A 30%, #282E87 80%);
 }
 
 .use__night::before {
@@ -2764,9 +2761,9 @@ footer {
   -webkit-transform: translate(0px, -100%);
       -ms-transform: translate(0px, -100%);
           transform: translate(0px, -100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(11, 29, 38, 0)), to(#0b1d26));
-  background: -o-linear-gradient(top, rgba(11, 29, 38, 0) 5%, #0b1d26 100%);
-  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 5%, #0b1d26 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(18, 61, 82, 0)), to(#0b1d26));
+  background: -o-linear-gradient(top, rgba(18, 61, 82, 0) 5%, #0b1d26 100%);
+  background: linear-gradient(180deg, rgba(18, 61, 82, 0) 5%, #0b1d26 100%);
 }
 
 .use__six {
@@ -2874,6 +2871,7 @@ footer {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  border-bottom: 1px solid wheat;
 }
 
 .spollres-block__title._active .arrow {
@@ -2883,7 +2881,10 @@ footer {
 }
 
 .spollres-block__body {
-  padding: 20px 0px 0px 0px;
+  padding: 20px;
+  line-height: 150%;
+  color: wheat;
+  background: #333;
 }
 
 .arrow {
@@ -2894,7 +2895,10 @@ footer {
   width: 20px;
   height: 20px;
   right: 20px;
-  top: 20px;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .arrow::after {
@@ -2962,7 +2966,7 @@ footer {
 }
 
 .FAQ__body {
-  padding: 20px 0px 0px 0px;
+  padding: 20px;
 }
 
 .FAQ__main-title {
@@ -2981,6 +2985,7 @@ footer {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  border-bottom: 1px solid wheat;
 }
 
 .FAQ__title._active .arrow {
@@ -2991,7 +2996,9 @@ footer {
 
 .FAQ__item {
   margin: 0px 0px 20px 0px;
-  padding: 10px;
+  background: #333;
+  color: wheat;
+  line-height: 150%;
 }
 
 .page__instruction {
@@ -3140,7 +3147,11 @@ footer {
 }
 
 .page__buy {
-  margin-top: calc(75px + 75 * ((100vw - 320px) / 1600));
+  margin-top: calc(25px + 25 * ((100vw - 320px) / 1600));
+}
+
+.buy {
+  padding: 50px 0px;
 }
 
 .buy__body {
@@ -3168,7 +3179,6 @@ footer {
 }
 
 .buy__item {
-  border: 2px solid #e45454;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3183,8 +3193,16 @@ footer {
   width: 100%;
 }
 
+._no-webp .buy__item_ozon{
+  background: url("../img/buy/ozon.png") 0 0 no-repeat; }
+
+.buy__item_wb {
+  background: -o-linear-gradient(135deg, #BD0076 35%, #770075 65%);
+  background: linear-gradient(-45deg, #BD0076 35%, #770075 65%);
+}
+
 .buy__link {
-  color: #000;
+  color: #fff;
   font-size: calc(24px + 8 * ((100vw - 320px) / 1600));
   text-transform: uppercase;
   display: -webkit-box;
@@ -3194,6 +3212,60 @@ footer {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.page__cards {
+  margin-top: calc(75px + 75 * ((100vw - 320px) / 1600));
+}
+
+.cards__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 10px;
+}
+
+.cards__item > *:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+
+.item-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  background: #333;
+  color: wheat;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.item-cards__image {
+  color: green;
+  font-size: 40px;
+}
+
+.item-cards__text {
+  text-align: center;
 }
 
 .page {
@@ -3354,6 +3426,10 @@ footer {
     color: #289c28;
   }
 
+  .options__icons {
+    display: none;
+  }
+
   .icon-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3488,6 +3564,12 @@ footer {
             flex-direction: column;
   }
 
+  .arrow {
+    width: 10px;
+    height: 10px;
+    right: 5px;
+  }
+
   .instruction__icon {
     top: 15px;
     left: calc(50% - 90px);
@@ -3522,6 +3604,17 @@ footer {
   }
 
   .buy__items > *:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .cards__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .cards__body > *:not(:last-child) {
     margin: 0px 0px 20px 0px;
   }
 }
@@ -3564,3 +3657,5 @@ footer {
 ._webp .fullscreen__fix{ background: url(../img/fullscreen/charisma.webp) 0 0 no-repeat; }
 
 ._webp .figure__image::before{ background: url(../img/figure/flower.webp) 0 0 no-repeat; }
+
+._webp .buy__item_ozon{ background: url(../img/buy/ozon.webp) 0 0 no-repeat; }
