@@ -217,7 +217,7 @@ h6 {
 */
 
 body {
-  color: #000;
+  color: wheat;
 }
 
 body._lock {
@@ -2377,6 +2377,10 @@ footer {
   margin: 0px 0px 0px 0px;
 }
 
+.page__fullscreen {
+  color: #000;
+}
+
 ._no-webp .fullscreen{
   background: url("../img/fullscreen/charisma.png") 70% 77% no-repeat, url("../img/fullscreen/bg.jpg") center/cover no-repeat; }
 
@@ -2496,15 +2500,15 @@ footer {
 
 .item-figure__number {
   padding: 10px;
-  border: 1px solid;
+  border: 1px solid #fff;
   font-size: 20px;
   text-align: center;
   border-radius: 50%;
-  color: #289c28;
+  color: #333;
 }
 
 .item-figure__text {
-  color: #666666;
+  color: #fff;
   padding: 10px;
   margin: 0px 0px 0px 5px;
   font-size: 20px;
@@ -2512,7 +2516,7 @@ footer {
 
 .item-figure__text span {
   font-weight: 800;
-  color: #000;
+  color: #333;
 }
 
 .page__steps {
@@ -2694,10 +2698,10 @@ footer {
 
 .page__use {
   padding-top: calc(75px + 75 * ((100vw - 320px) / 1600));
-  background: -o-linear-gradient(45deg, #4B95D4 40%, #77ABD3 60%);
-  background: linear-gradient(45deg, #4B95D4 40%, #77ABD3 60%);
-  -webkit-box-shadow: 0px -20px 50px #4B95D4, 0px 20px 50px #4B95D4;
-          box-shadow: 0px -20px 50px #4B95D4, 0px 20px 50px #4B95D4;
+  background: -o-linear-gradient(165deg, #4B95D4 30%, #77ABD3 70%);
+  background: linear-gradient(-75deg, #4B95D4 30%, #77ABD3 70%);
+  -webkit-box-shadow: 0px -20px 50px #77ABD3, 0px 20px 50px #4B95D4;
+          box-shadow: 0px -20px 50px #77ABD3, 0px 20px 50px #4B95D4;
 }
 
 .use {
@@ -2743,11 +2747,12 @@ footer {
 .use__night {
   padding: 50px 0px;
   position: relative;
-  background: -webkit-gradient(linear, right top, left top, color-stop(30%, #01032A), color-stop(80%, #282E87));
-  background: -o-linear-gradient(right, #01032A 30%, #282E87 80%);
-  background: linear-gradient(-90deg, #01032A 30%, #282E87 80%);
-  -webkit-box-shadow: 0px -20px 40px #282E87, 0px 20px 40px #282E87;
-          box-shadow: 0px -20px 40px #282E87, 0px 20px 40px #282E87;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(30%, #01032ac5), color-stop(80%, #282e87d5));
+  background: -o-linear-gradient(right, #01032ac5 30%, #282e87d5 80%);
+  background: linear-gradient(-90deg, #01032ac5 30%, #282e87d5 80%);
+  -webkit-box-shadow: 0px -20px 30px #282E87, 0px 20px 50px #282E87;
+          box-shadow: 0px -20px 30px #282E87, 0px 20px 50px #282E87;
   z-index: 2;
 }
 
@@ -2765,8 +2770,8 @@ footer {
 
 .use__six {
   padding: 50px 0px;
-  -webkit-box-shadow: 0px 10px 40px #77ABD3;
-          box-shadow: 0px 10px 40px #77ABD3;
+  -webkit-box-shadow: 0px -10px 40px #77ABD3;
+          box-shadow: 0px -10px 40px #77ABD3;
   position: relative;
 }
 
@@ -3124,6 +3129,21 @@ footer {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
           flex: 0 1 30%;
+  padding: 10px;
+}
+
+.sertificate__image:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 10px 10px 40px #333;
+          box-shadow: 10px 10px 40px #333;
+}
+
+.sertificate__image img {
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 30px #333;
+          box-shadow: 10px 10px 30px #333;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -3132,20 +3152,9 @@ footer {
   transition: all 0.8s ease 0s;
 }
 
-.sertificate__image:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.sertificate__image img {
-  width: 100%;
-  padding: 10px;
-}
-
 .page {
-  background: -o-linear-gradient(135deg, #74CB26, #E5F5D7);
-  background: linear-gradient(-45deg, #74CB26, #E5F5D7);
+  background: -o-linear-gradient(135deg, #468F71, #468f71a9);
+  background: linear-gradient(-45deg, #468F71, #468f71a9);
 }
 
 .page__buy {
@@ -3193,21 +3202,34 @@ footer {
           justify-content: center;
   border-radius: 20px;
   width: 100%;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.buy__item:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 ._no-webp .buy__item_ozon{
   background: url("../img/buy/ozon.png") 0 0 no-repeat; }
 
 .buy__item_ozon {
-  -webkit-box-shadow: 20px 20px 40px #0C63FF;
-          box-shadow: 20px 20px 40px #0C63FF;
+  -webkit-box-shadow: 10px 20px 40px #0C63FF;
+          box-shadow: 10px 20px 40px #0C63FF;
 }
 
 .buy__item_wb {
   background: -o-linear-gradient(135deg, #BD0076 35%, #770075 65%);
   background: linear-gradient(-45deg, #BD0076 35%, #770075 65%);
-  -webkit-box-shadow: 20px 20px 40px #BD0076;
-          box-shadow: 20px 20px 40px #BD0076;
+  -webkit-box-shadow: 10px 20px 40px #BD0076;
+          box-shadow: 10px 20px 40px #BD0076;
 }
 
 .buy__link {
@@ -3614,7 +3636,7 @@ footer {
   }
 
   .buy__items > *:not(:last-child) {
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 40px 0px;
   }
 
   .cards__body {
