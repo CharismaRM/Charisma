@@ -2379,6 +2379,8 @@ footer {
 
 .page__fullscreen {
   color: #000;
+  -webkit-box-shadow: inset 0px -30px 40px #8FCCB3;
+          box-shadow: inset 0px -30px 40px #8FCCB3;
 }
 
 ._no-webp .fullscreen{
@@ -2875,9 +2877,9 @@ footer {
 }
 
 .spollres-block__title._active .arrow {
-  -webkit-transform: scaleY(-1);
-      -ms-transform: scaleY(-1);
-          transform: scaleY(-1);
+  -webkit-transform: translate(-50%, -50%) scaleY(-1);
+      -ms-transform: translate(-50%, -50%) scaleY(-1);
+          transform: translate(-50%, -50%) scaleY(-1);
 }
 
 .spollres-block__body {
@@ -2989,9 +2991,9 @@ footer {
 }
 
 .FAQ__title._active .arrow {
-  -webkit-transform: scaleY(-1);
-      -ms-transform: scaleY(-1);
-          transform: scaleY(-1);
+  -webkit-transform: translate(-50%, -50%) scaleY(-1);
+      -ms-transform: translate(-50%, -50%) scaleY(-1);
+          transform: translate(-50%, -50%) scaleY(-1);
 }
 
 .FAQ__item {
@@ -3153,8 +3155,8 @@ footer {
 }
 
 .page {
-  background: -o-linear-gradient(135deg, #468F71, #468f71a9);
-  background: linear-gradient(-45deg, #468F71, #468f71a9);
+  background: -o-linear-gradient(225deg, #9dd1bcfa, #1aa56b);
+  background: linear-gradient(-135deg, #9dd1bcfa, #1aa56b);
 }
 
 .page__buy {
@@ -3228,8 +3230,8 @@ footer {
 .buy__item_wb {
   background: -o-linear-gradient(135deg, #BD0076 35%, #770075 65%);
   background: linear-gradient(-45deg, #BD0076 35%, #770075 65%);
-  -webkit-box-shadow: 10px 20px 40px #BD0076;
-          box-shadow: 10px 20px 40px #BD0076;
+  -webkit-box-shadow: 10px 20px 50px #BD0076;
+          box-shadow: 10px 20px 50px #BD0076;
 }
 
 .buy__link {
