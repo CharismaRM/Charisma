@@ -2516,6 +2516,7 @@ footer {
 
 .page__steps {
   padding-top: calc(75px + 75 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(25px + 25 * ((100vw - 320px) / 1600));
 }
 
 .steps {
@@ -2695,7 +2696,11 @@ footer {
 }
 
 .page__use {
-  margin-top: calc(75px + 75 * ((100vw - 320px) / 1600));
+  padding-top: calc(75px + 75 * ((100vw - 320px) / 1600));
+  background: -o-linear-gradient(45deg, #4B95D4 40%, #77ABD3 60%);
+  background: linear-gradient(45deg, #4B95D4 40%, #77ABD3 60%);
+  -webkit-box-shadow: 5px -20px 50px #4B95D4, 5px 20px 50px #4B95D4;
+          box-shadow: 5px -20px 50px #4B95D4, 5px 20px 50px #4B95D4;
 }
 
 .use {
@@ -2703,8 +2708,6 @@ footer {
 }
 
 .use__three {
-  background: -o-linear-gradient(45deg, #4B95D4 40%, #77ABD3 60%);
-  background: linear-gradient(45deg, #4B95D4 40%, #77ABD3 60%);
   position: relative;
   padding: 50px 0px;
 }
@@ -2719,9 +2722,6 @@ footer {
   -webkit-transform: translate(0px, -100%);
       -ms-transform: translate(0px, -100%);
           transform: translate(0px, -100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(6, 162, 247, 0)), color-stop(110%, #739caf));
-  background: -o-linear-gradient(top, rgba(6, 162, 247, 0) 5%, #739caf 110%);
-  background: linear-gradient(180deg, rgba(6, 162, 247, 0) 5%, #739caf 110%);
 }
 
 .use__title {
@@ -2749,6 +2749,9 @@ footer {
   background: -webkit-gradient(linear, right top, left top, color-stop(30%, #01032A), color-stop(80%, #282E87));
   background: -o-linear-gradient(right, #01032A 30%, #282E87 80%);
   background: linear-gradient(-90deg, #01032A 30%, #282E87 80%);
+  -webkit-box-shadow: 0px -20px 40px #282E87, 0px 20px 40px #282E87;
+          box-shadow: 0px -20px 40px #282E87, 0px 20px 40px #282E87;
+  z-index: 2;
 }
 
 .use__night::before {
@@ -2761,16 +2764,12 @@ footer {
   -webkit-transform: translate(0px, -100%);
       -ms-transform: translate(0px, -100%);
           transform: translate(0px, -100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(18, 61, 82, 0)), to(#0b1d26));
-  background: -o-linear-gradient(top, rgba(18, 61, 82, 0) 5%, #0b1d26 100%);
-  background: linear-gradient(180deg, rgba(18, 61, 82, 0) 5%, #0b1d26 100%);
 }
 
 .use__six {
   padding: 50px 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4B95D4), to(#77ABD3));
-  background: -o-linear-gradient(#4B95D4, #77ABD3);
-  background: linear-gradient(#4B95D4, #77ABD3);
+  -webkit-box-shadow: -15px 10px 40px #77ABD3;
+          box-shadow: -15px 10px 40px #77ABD3;
   position: relative;
 }
 
@@ -2784,9 +2783,6 @@ footer {
   -webkit-transform: translate(0px, -100%);
       -ms-transform: translate(0px, -100%);
           transform: translate(0px, -100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(6, 162, 247, 0)), color-stop(110%, #739caf));
-  background: -o-linear-gradient(top, rgba(6, 162, 247, 0) 5%, #739caf 110%);
-  background: linear-gradient(180deg, rgba(6, 162, 247, 0) 5%, #739caf 110%);
 }
 
 .use__image img {
@@ -2856,6 +2852,8 @@ footer {
 
 .spollres-block__item {
   margin: 0px 0px 20px 0px;
+  -webkit-box-shadow: 15px 10px 20px #333;
+          box-shadow: 15px 10px 20px #333;
 }
 
 .spollres-block__item:last-child {
@@ -2995,6 +2993,8 @@ footer {
 }
 
 .FAQ__item {
+  -webkit-box-shadow: 15px 10px 20px #333;
+          box-shadow: 15px 10px 20px #333;
   margin: 0px 0px 20px 0px;
   background: #333;
   color: wheat;
@@ -3146,6 +3146,11 @@ footer {
   padding: 10px;
 }
 
+.page {
+  background: -o-linear-gradient(135deg, #74CB26, #E5F5D7);
+  background: linear-gradient(-45deg, #74CB26, #E5F5D7);
+}
+
 .page__buy {
   margin-top: calc(25px + 25 * ((100vw - 320px) / 1600));
 }
@@ -3189,16 +3194,22 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 20px;
-  padding: 40px 20px;
   width: 100%;
 }
 
 ._no-webp .buy__item_ozon{
   background: url("../img/buy/ozon.png") 0 0 no-repeat; }
 
+.buy__item_ozon {
+  -webkit-box-shadow: 20px 20px 40px #0C63FF;
+          box-shadow: 20px 20px 40px #0C63FF;
+}
+
 .buy__item_wb {
   background: -o-linear-gradient(135deg, #BD0076 35%, #770075 65%);
   background: linear-gradient(-45deg, #BD0076 35%, #770075 65%);
+  -webkit-box-shadow: 20px 20px 40px #BD0076;
+          box-shadow: 20px 20px 40px #BD0076;
 }
 
 .buy__link {
@@ -3212,6 +3223,7 @@ footer {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  padding: 40px 20px;
 }
 
 .page__cards {
@@ -3255,8 +3267,8 @@ footer {
   background: #333;
   color: wheat;
   border-radius: 20px;
-  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
-          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 10px 10px 40px #333;
+          box-shadow: 10px 10px 40px #333;
 }
 
 .item-cards__image {
