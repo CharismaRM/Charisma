@@ -2812,6 +2812,7 @@ footer {
 
 .item-steps__image_girl img {
   border-radius: 0%;
+  background: #FDF2F4;
 }
 
 .item-steps__image::before {
@@ -3028,8 +3029,8 @@ footer {
 
 .spollres-block__item {
   margin: 0px 0px 20px 0px;
-  -webkit-box-shadow: 15px 10px 20px #341C18;
-          box-shadow: 15px 10px 20px #341C18;
+  -webkit-box-shadow: 10px 10px 40px #770075;
+          box-shadow: 10px 10px 40px #770075;
   opacity: 0;
   -webkit-transform: translate(0px, 100px);
       -ms-transform: translate(0px, 100px);
@@ -3052,7 +3053,8 @@ footer {
 
 .spollres-block__title {
   color: wheat;
-  background: #341C18;
+  background: -o-linear-gradient(120deg, #770075 35%, #BD0076 65%);
+  background: linear-gradient(-30deg, #770075 35%, #BD0076 65%);
   cursor: pointer;
   padding: 20px;
   position: relative;
@@ -3072,7 +3074,8 @@ footer {
   padding: 20px;
   line-height: 150%;
   color: wheat;
-  background: #341C18;
+  background: -o-linear-gradient(120deg, #770075 35%, #BD0076 65%);
+  background: linear-gradient(-30deg, #770075 35%, #BD0076 65%);
   text-align: center;
 }
 
@@ -3182,7 +3185,8 @@ footer {
 .FAQ__title {
   cursor: pointer;
   color: wheat;
-  background: #341C18;
+  background: -o-linear-gradient(120deg, #770075 35%, #BD0076 65%);
+  background: linear-gradient(-30deg, #770075 35%, #BD0076 65%);
   cursor: pointer;
   padding: 20px;
   position: relative;
@@ -3199,8 +3203,8 @@ footer {
 }
 
 .FAQ__item {
-  -webkit-box-shadow: 15px 10px 20px #341C18;
-          box-shadow: 15px 10px 20px #341C18;
+  -webkit-box-shadow: 10px 10px 40px #770075;
+          box-shadow: 10px 10px 40px #770075;
   opacity: 0;
   -webkit-transform: translate(0px, 100px);
       -ms-transform: translate(0px, 100px);
@@ -3209,7 +3213,8 @@ footer {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   margin: 0px 0px 20px 0px;
-  background: #341C18;
+  background: -o-linear-gradient(120deg, #770075 35%, #BD0076 65%);
+  background: linear-gradient(-30deg, #770075 35%, #BD0076 65%);
   color: wheat;
   line-height: 150%;
 }
@@ -3383,8 +3388,8 @@ footer {
 }
 
 .page {
-  background: -o-linear-gradient(225deg, #9dd1bcfa, #1aa56b);
-  background: linear-gradient(-135deg, #9dd1bcfa, #1aa56b);
+  background: -o-linear-gradient(135deg, #4B95D4, #213E65);
+  background: linear-gradient(-45deg, #4B95D4, #213E65);
 }
 
 .page__buy {
@@ -3583,11 +3588,12 @@ footer {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
           flex: 0 1 30%;
-  background: #0B1D26;
+  background: -o-linear-gradient(120deg, #770075 35%, #BD0076 65%);
+  background: linear-gradient(-30deg, #770075 35%, #BD0076 65%);
   color: wheat;
   border-radius: 20px;
-  -webkit-box-shadow: 10px 10px 40px #0B1D26;
-          box-shadow: 10px 10px 40px #0B1D26;
+  -webkit-box-shadow: 10px 1s0px 40px #770075;
+          box-shadow: 10px 1s0px 40px #770075;
   opacity: 0;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -3647,8 +3653,8 @@ footer {
 
 .without__item {
   margin: 0px 0px 20px 0px;
-  -webkit-box-shadow: 15px 10px 40px #341C18;
-          box-shadow: 15px 10px 40px #341C18;
+  -webkit-box-shadow: 10px 10px 40px #770075;
+          box-shadow: 10px 10px 40px #770075;
   opacity: 0;
   -webkit-transform: translate(0px, 100px);
       -ms-transform: translate(0px, 100px);
@@ -3671,7 +3677,8 @@ footer {
 
 .without__title {
   text-align: center;
-  background: #341C18;
+  background: -o-linear-gradient(120deg, #770075 35%, #BD0076 65%);
+  background: linear-gradient(-30deg, #770075 35%, #BD0076 65%);
   cursor: pointer;
   padding: 20px;
   position: relative;
@@ -3697,7 +3704,8 @@ footer {
   padding: 20px;
   line-height: 150%;
   color: wheat;
-  background: #341C18;
+  background: -o-linear-gradient(120deg, #770075 35%, #BD0076 65%);
+  background: linear-gradient(-30deg, #770075 35%, #BD0076 65%);
   text-align: center;
 }
 
