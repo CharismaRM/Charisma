@@ -2408,7 +2408,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: calc(150px + 150 * ((100vw - 320px) / 1600));
+  padding-top: calc(70px + 130 * ((100vw - 320px) / 1600));
   padding-bottom: calc(50px + 50 * ((100vw - 320px) / 1600));
   padding-right: calc(50px + -50 * ((100vw - 320px) / 1600));
 }
@@ -2601,6 +2601,20 @@ footer {
   text-align: center;
   border-radius: 50%;
   color: #333;
+  opacity: 0;
+  -webkit-transform: translate(-100px, 0px);
+      -ms-transform: translate(-100px, 0px);
+          transform: translate(-100px, 0px);
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.item-figure__number._active {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .item-figure__text {
@@ -2612,9 +2626,9 @@ footer {
   -webkit-transform: translate(100px, 0px);
       -ms-transform: translate(100px, 0px);
           transform: translate(100px, 0px);
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .item-figure__text._active {
@@ -2788,6 +2802,16 @@ footer {
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
+  -webkit-transform: translate(0px, 100px);
+      -ms-transform: translate(0px, 100px);
+          transform: translate(0px, 100px);
+}
+
+.item-steps__number._active {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .item-steps__image {
@@ -2796,6 +2820,17 @@ footer {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   z-index: 1;
+  -webkit-transform: translate(0px, 100px);
+      -ms-transform: translate(0px, 100px);
+          transform: translate(0px, 100px);
+  transition: all 0.3s ease 0s;
+}
+
+.item-steps__image._active {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .item-steps__image img {
@@ -2806,8 +2841,21 @@ footer {
 }
 
 .item-steps__image_girl {
+  -webkit-transform: translate(100px, 0px);
+      -ms-transform: translate(100px, 0px);
+          transform: translate(100px, 0px);
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
   display: block;
   z-index: 0;
+}
+
+.item-steps__image_girl._active {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .item-steps__image_girl img {
@@ -2916,12 +2964,12 @@ footer {
           flex-direction: column;
   width: 80%;
   opacity: 0;
-  -webkit-transform: translate(0px, 100px);
-      -ms-transform: translate(0px, 100px);
-          transform: translate(0px, 100px);
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transform: translate(-100px, 0px);
+      -ms-transform: translate(-100px, 0px);
+          transform: translate(-100px, 0px);
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .use__list._active {
@@ -2985,13 +3033,22 @@ footer {
 
 .use__image img {
   width: 400px;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
   -webkit-transform: scale(1.25);
       -ms-transform: scale(1.25);
           transform: scale(1.25);
   position: absolute;
+  opacity: 0;
   right: 10%;
   top: 20%;
   z-index: -1;
+}
+
+.use__image img._active {
+  opacity: 1;
+  right: 20%;
 }
 
 .use__night ._container {
@@ -3010,7 +3067,7 @@ footer {
 .advantages__title {
   font-size: calc(32px + 8 * ((100vw - 320px) / 1600));
   text-align: center;
-  margin-bottom: calc(10px + 20 * ((100vw - 320px) / 1600));
+  margin-bottom: calc(30px + 70 * ((100vw - 320px) / 1600));
   opacity: 0;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -3035,9 +3092,9 @@ footer {
   -webkit-transform: translate(0px, 100px);
       -ms-transform: translate(0px, 100px);
           transform: translate(0px, 100px);
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .spollres-block__item:last-child {
@@ -3165,7 +3222,7 @@ footer {
 .FAQ__main-title {
   font-size: calc(32px + 8 * ((100vw - 320px) / 1600));
   text-align: center;
-  margin-bottom: calc(10px + 20 * ((100vw - 320px) / 1600));
+  margin-bottom: calc(30px + 70 * ((100vw - 320px) / 1600));
   opacity: 0;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -3209,9 +3266,9 @@ footer {
   -webkit-transform: translate(0px, 100px);
       -ms-transform: translate(0px, 100px);
           transform: translate(0px, 100px);
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
   margin: 0px 0px 20px 0px;
   background: -o-linear-gradient(120deg, #770075 35%, #BD0076 65%);
   background: linear-gradient(-30deg, #770075 35%, #BD0076 65%);
@@ -3339,18 +3396,18 @@ footer {
   margin-bottom: calc(20px + 60 * ((100vw - 320px) / 1600));
   font-size: calc(32px + 8 * ((100vw - 320px) / 1600));
   opacity: 0;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transform: translate(0px, -100px);
+      -ms-transform: translate(0px, -100px);
+          transform: translate(0px, -100px);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .sertificate__title._active {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
   opacity: 1;
 }
 
@@ -3379,12 +3436,20 @@ footer {
   width: 100%;
   -webkit-box-shadow: 10px 10px 30px #333;
           box-shadow: 10px 10px 30px #333;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  opacity: 0;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
+}
+
+.sertificate__image img._active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 .page {
@@ -3416,18 +3481,18 @@ footer {
   font-size: calc(32px + 8 * ((100vw - 320px) / 1600));
   line-height: 150%;
   opacity: 0;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transform: translate(0px, -100px);
+      -ms-transform: translate(0px, -100px);
+          transform: translate(0px, -100px);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .buy__title._active {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
   opacity: 1;
 }
 
@@ -3505,9 +3570,9 @@ footer {
 
 .buy__list li {
   padding: 10px;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
   -webkit-transform: translate(0px, 0px) scale(1);
       -ms-transform: translate(0px, 0px) scale(1);
           transform: translate(0px, 0px) scale(1);
@@ -3538,6 +3603,20 @@ footer {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+}
+
+.buy__link._active {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
 }
 
 .buy__link img {
@@ -3545,9 +3624,9 @@ footer {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .page__cards {
@@ -3634,7 +3713,7 @@ footer {
 .without__text {
   font-size: calc(32px + 8 * ((100vw - 320px) / 1600));
   text-align: center;
-  margin-bottom: calc(10px + 20 * ((100vw - 320px) / 1600));
+  margin-bottom: calc(30px + 70 * ((100vw - 320px) / 1600));
   opacity: 0;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -3659,9 +3738,9 @@ footer {
   -webkit-transform: translate(0px, 100px);
       -ms-transform: translate(0px, 100px);
           transform: translate(0px, 100px);
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .without__item:last-child {
@@ -3985,7 +4064,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 150px 0px 60px 0px;
+    padding: 70px 0px 60px 0px;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
