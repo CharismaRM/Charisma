@@ -3090,16 +3090,22 @@ footer {
   -webkit-box-shadow: 10px 10px 40px #770075;
           box-shadow: 10px 10px 40px #770075;
   opacity: 0;
-  -webkit-transform: translate(0px, 100px);
-      -ms-transform: translate(0px, 100px);
-          transform: translate(0px, 100px);
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transform: translate(100%, 0px);
+      -ms-transform: translate(100%, 0px);
+          transform: translate(100%, 0px);
+  -webkit-transition: all 1.3s ease 0s;
+  -o-transition: all 1.3s ease 0s;
+  transition: all 1.3s ease 0s;
 }
 
 .spollres-block__item:last-child {
   margin: 0px 0px 0px 0px;
+}
+
+.spollres-block__item:nth-child(2n) {
+  -webkit-transform: translate(-100%, 0px);
+      -ms-transform: translate(-100%, 0px);
+          transform: translate(-100%, 0px);
 }
 
 .spollres-block__item._active {
