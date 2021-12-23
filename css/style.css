@@ -2460,7 +2460,6 @@ footer {
   -webkit-transition: all 0.8s ease 0.25s;
   -o-transition: all 0.8s ease 0.25s;
   transition: all 0.8s ease 0.25s;
-  z-index: 2;
 }
 
 .fullscreen__image._active {
@@ -2798,9 +2797,9 @@ footer {
 
 .item-steps__image_girl {
   position: relative;
-  -webkit-transform: translate(0px, -50px);
-      -ms-transform: translate(0px, -50px);
-          transform: translate(0px, -50px);
+  -webkit-transform: translate(20px, -60px);
+      -ms-transform: translate(20px, -60px);
+          transform: translate(20px, -60px);
   display: block;
   z-index: 1;
 }
@@ -2815,17 +2814,17 @@ footer {
   height: calc(150px + 150 * ((100vw - 320px) / 1600));
   width: 200px;
   height: 250px;
-  top: -80%;
-  left: 25%;
+  top: -90%;
+  left: 45%;
   z-index: 10;
 }
 
 .item-steps__image_girl img {
   border-radius: 0%;
   background: #FDF2F4;
-  -webkit-transform: scale(1.5, 1.65);
-      -ms-transform: scale(1.5, 1.65);
-          transform: scale(1.5, 1.65);
+  -webkit-transform: scale(1.5, 1.85);
+      -ms-transform: scale(1.5, 1.85);
+          transform: scale(1.5, 1.85);
 }
 
 .item-steps__text {
@@ -3277,7 +3276,7 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0px 150px;
+  padding: 0px 230px;
 }
 
 .sertificate__image {
@@ -3581,6 +3580,20 @@ footer {
   text-align: center;
 }
 
+.page__botl {
+  margin-top: calc(25px + 25 * ((100vw - 320px) / 1600));
+  margin-bottom: calc(50px + 50 * ((100vw - 320px) / 1600));
+}
+
+.botl__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -3682,6 +3695,10 @@ footer {
 
   .item-steps__image_girl:after {
     display: none;
+  }
+
+  .sertificate__item {
+    padding: 0px 150px;
   }
 }
 
@@ -3993,7 +4010,7 @@ footer {
   }
 
   .sertificate__image {
-    width: 250px;
+    width: 80%;
   }
 
   .buy__items {
@@ -4049,7 +4066,7 @@ footer {
   }
 
   .sertificate__image {
-    width: 100%;
+    width: 80%;
   }
 
   .cards__body {
