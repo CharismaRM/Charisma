@@ -2544,6 +2544,8 @@ footer {
   -webkit-transform: translate(0px, -30px);
       -ms-transform: translate(0px, -30px);
           transform: translate(0px, -30px);
+  position: relative;
+  z-index: 10;
 }
 
 .figure__image {
@@ -2573,6 +2575,7 @@ footer {
 }
 
 .figure__description {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2586,7 +2589,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 3;
+  z-index: 1005;
   color: #000;
   padding: 10px;
   background: #fff;
@@ -3130,7 +3133,6 @@ footer {
 }
 
 .FAQ__title {
-  cursor: pointer;
   color: wheat;
   background: #289c28;
   cursor: pointer;
@@ -3453,7 +3455,6 @@ footer {
 
 .page__cards {
   margin-top: calc(75px + 75 * ((100vw - 320px) / 1600));
-  background: #289c28;
   padding: 0px;
 }
 
@@ -3461,26 +3462,12 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.cards__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 20px 10px;
-}
-
-.cards__item > *:not(:last-child) {
-  margin: 0px 0px 20px 0px;
-}
-
-.item-cards {
+.cards__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3488,26 +3475,44 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.cards__items > *:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+
+.cards__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 10px;
+  border-radius: 20px;
+  background: #fff;
+  color: #289c28;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: calc(18px + 14 * ((100vw - 320px) / 1600));
+  -webkit-box-shadow: 0px 0px 40px #333;
+          box-shadow: 0px 0px 40px #333;
+}
+
+.cards__icon {
+  margin: 0px 10px 0px 0px;
+}
+
+.cards__text {
+  text-transform: uppercase;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 30%;
-          flex: 0 1 30%;
-  background: #289c28;
-  color: wheat;
-  border-radius: 20px;
-  -webkit-box-shadow: 10px 1s0px 40px #770075;
-          box-shadow: 10px 1s0px 40px #770075;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
 }
 
-.item-cards__image {
-  color: wheat;
-  font-size: 40px;
-}
-
-.item-cards__text {
-  text-align: center;
+.cards__image img {
+  height: 500px;
 }
 
 .page__without {
@@ -3942,7 +3947,7 @@ footer {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
-    margin: 60px 0px 40px 0px;
+    margin: 100px 0px 70px 0px;
   }
 
   .use__title {
@@ -4028,6 +4033,35 @@ footer {
     max-width: 150px;
   }
 
+  .cards__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .cards__items {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .cards__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+    min-height: 150px;
+  }
+
   .without__item {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
@@ -4069,15 +4103,10 @@ footer {
     width: 80%;
   }
 
-  .cards__body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .cards__body > *:not(:last-child) {
-    margin: 0px 0px 20px 0px;
+  .cards__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 }
 
