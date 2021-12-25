@@ -2434,7 +2434,7 @@ footer {
 
 .fullscreen__title {
   font-size: calc(40px + 20 * ((100vw - 320px) / 1600));
-  line-height: 150%;
+  line-height: 120%;
   -webkit-transform: translate(-100%, -50%);
       -ms-transform: translate(-100%, -50%);
           transform: translate(-100%, -50%);
@@ -2852,8 +2852,6 @@ footer {
 }
 
 .page__use {
-  background: -o-linear-gradient(315deg, #4B95D4 10%, #347da1 90%);
-  background: linear-gradient(135deg, #4B95D4 10%, #347da1 90%);
   -webkit-box-shadow: 0px -20px 50px #77ABD3, 0px 20px 50px #4B95D4;
           box-shadow: 0px -20px 50px #77ABD3, 0px 20px 50px #4B95D4;
   margin-top: 100px;
@@ -2865,6 +2863,10 @@ footer {
 }
 
 .use__three {
+  opacity: 1;
+  border-radius: 20px;
+  background: -o-linear-gradient(315deg, #4B95D4 10%, #347da1 90%);
+  background: linear-gradient(135deg, #4B95D4 10%, #347da1 90%);
   padding: 30px 0px;
 }
 
@@ -2956,6 +2958,10 @@ footer {
   padding: 30px 0px;
   -webkit-box-shadow: 0px -10px 40px #77ABD3;
           box-shadow: 0px -10px 40px #77ABD3;
+  border-radius: 20px;
+  background: -o-linear-gradient(315deg, #4B95D4 10%, #347da1 90%);
+  background: linear-gradient(135deg, #4B95D4 10%, #347da1 90%);
+  opacity: 1;
 }
 
 .use__six::before {
@@ -3455,7 +3461,8 @@ footer {
 
 .page__cards {
   margin-top: calc(75px + 75 * ((100vw - 320px) / 1600));
-  padding: 0px;
+  background: #289c28;
+  padding: 20px 0px;
 }
 
 .cards__body {
@@ -3465,28 +3472,38 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.cards__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.cards__items > *:not(:last-child) {
-  margin: 0px 0px 20px 0px;
+.cards__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 0px 0px;
 }
 
 .cards__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
   padding: 40px 10px;
   border-radius: 20px;
+  min-height: 180px;
+  margin: 0px 0px 20px 0px;
   background: #fff;
   color: #289c28;
   -webkit-box-align: center;
@@ -3526,6 +3543,9 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .without__body:last-child {
@@ -3542,17 +3562,13 @@ footer {
 .without__item {
   margin: 0px 0px 20px 0px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
   background: rgba(255, 255, 255, 0.8);
 }
 
 .without__item:last-child {
   margin: 0px 0px 0px 0px;
-}
-
-.without__item:nth-child(2n) {
-  background: #FDF2F4;
 }
 
 .without__title {
@@ -3711,6 +3727,10 @@ footer {
   ._container {
     max-width: none;
     padding: 0 10px;
+  }
+
+  .header__body {
+    height: 68px;
   }
 
   .menu__body {
@@ -3888,7 +3908,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 70px 0px 60px 0px;
+    padding: 15px 0px 60px 0px;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -4031,35 +4051,6 @@ footer {
 
   .buy__link img {
     max-width: 150px;
-  }
-
-  .cards__body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .cards__items {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .cards__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 45%;
-            flex: 0 1 45%;
-    min-height: 150px;
   }
 
   .without__item {
