@@ -2427,7 +2427,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: calc(70px + 130 * ((100vw - 320px) / 1600));
+  padding-top: calc(80px + 120 * ((100vw - 320px) / 1600));
   padding-bottom: calc(50px + 50 * ((100vw - 320px) / 1600));
   padding-right: calc(50px + -50 * ((100vw - 320px) / 1600));
 }
@@ -3422,9 +3422,9 @@ footer {
   margin-bottom: calc(20px + 60 * ((100vw - 320px) / 1600));
   font-size: calc(32px + 8 * ((100vw - 320px) / 1600));
   color: #000;
-  -webkit-transform: translate(0px, -100px);
-      -ms-transform: translate(0px, -100px);
-          transform: translate(0px, -100px);
+  -webkit-transform: translate(0px, 100px);
+      -ms-transform: translate(0px, 100px);
+          transform: translate(0px, 100px);
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -3469,8 +3469,7 @@ footer {
 }
 
 .page {
-  background: -o-linear-gradient(328.867deg, #ffecd2 6.140625%, #fcb8a2 95.515625%);
-  background: linear-gradient(121.1328568917deg, #ffecd2 6.140625%, #fcb8a2 95.515625%);
+  background: #E5F5D7;
 }
 
 .page__buy {
@@ -4028,7 +4027,7 @@ footer {
   }
 
   .header__body {
-    height: 68px;
+    height: 75px;
   }
 
   .menu__body {
@@ -4206,7 +4205,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 15px 0px 60px 0px;
+    padding: 25px 0px 60px 0px;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -4233,6 +4232,10 @@ footer {
 
   .fullscreen__image {
     padding-top: 20px;
+  }
+
+  .fullscreen__image:before {
+    bottom: 25px;
   }
 
   .figure__body {
@@ -4390,6 +4393,25 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 767.98px) {
+  .icon-menu {
+    height: 50px;
+    width: 50px;
+  }
+
+  .icon-menu span {
+    width: 32px;
+  }
+
+  .icon-menu span:nth-child(1) {
+    width: 20px;
+  }
+
+  .icon-menu span:nth-child(2) {
+    width: 12px;
   }
 }
 
